@@ -1,46 +1,34 @@
+#include <stdio.h>
+#include <math.h>
 /*
-5) Escreva uma fun√ß√£o que calcule e retorne a dist√¢ncia entre dois pontos (x1, y1) e
-(x2, y2).
-6) Fa√ßa uma fun√ß√£o que verifique se um valor √© perfeito ou n√£o. Um valor √© dito
-perfeito quando ele √© igual a soma dos seus divisores excetuando ele pr√≥prio. (Ex: 6
-√© perfeito, 6 = 1 + 2 + 3, que s√£o seus divisores). A fun√ß√£o deve retornar um valor
-booleano.
-7) Escreva uma fun√ß√£o media_final(p1, p2, ep1, ep2, ep3) que recebe as notas das
-provas p1 e p2 e as notas dos exerc√≠cios-programa ep1, ep2 e ep3 de um aluno.
-Devolve a m√©dia final deste aluno. A m√©dia final √© dada por (2p+ep)/3, onde p =
-(p1+2p2)/3 e ep = (ep1+2ep2+3ep3)/6.
-8) Escreva uma fun√ß√£o que compara duas datas que s√£o dadas na forma dia, m√™s e
-ano. A fun√ß√£o devolve 1 se a primeira data √© maior que a segunda, 0 se s√£o iguais e
--1 se a segunda √© maior que a primeira.
-9) Escreva uma fun√ß√£o que recebe, por par√¢metro, dois valores X e Z e calcula e
+8) Escreva uma funÁ„o que compara duas datas que s„o dadas na forma dia, mÍs e
+ano. A funÁ„o devolve 1 se a primeira data È maior que a segunda, 0 se s„o iguais e
+-1 se a segunda È maior que a primeira.
+9) Escreva uma funÁ„o que recebe, por par‚metro, dois valores X e Z e calcula e
 retorna X^Z (X elevado a Z).
-10) Criar uma fun√ß√£o que verifique quantas vezes um n√∫mero inteiro x √© divis√≠vel por um
-n√∫mero inteiro y. A fun√ß√£o deve retornar -1 caso n√£o seja poss√≠vel calcular
-11) Escreva uma fun√ß√£o que recebe n maior que zero, e retorna seu fatorial.
-
-12) Criar uma fun√ß√£o que calcule e retorne o n√∫mero de arranjos e outra que fa√ßa o
-mesmo para combina√ß√µes. As entradas ser√£o:
+10) Criar uma funÁ„o que verifique quantas vezes um n˙mero inteiro x È divisÌvel por um
+n˙mero inteiro y. A funÁ„o deve retornar -1 caso n„o seja possÌvel calcular
+11) Escreva uma funÁ„o que recebe n maior que zero, e retorna seu fatorial.
+12) Criar uma funÁ„o que calcule e retorne o n˙mero de arranjos e outra que faÁa o
+mesmo para combinaÁıes. As entradas ser„o:
 n = Quantidade total de elementos no conjunto
-p = Quantidade de elementos por arranjo/combina√ß√£o
-Siga as seguintes f√≥rmulas:
-
+p = Quantidade de elementos por arranjo/combinaÁ„o
+Siga as seguintes fÛrmulas:
 Arranjos:
-
-Combina√ß√µes:
-
-13) Escreva uma fun√ß√£o que recebe n maior que zero e devolve o n-√©simo n√∫mero
-harm√¥nico, dado pelo valor da soma:
+A = n!/(n-p)!
+CombinaÁıes:
+C = n!/p!(n-p)!
+13) Escreva uma funÁ„o que recebe n maior que zero e devolve o n-Èsimo n˙mero
+harmÙnico, dado pelo valor da soma:
 1 + 1/2 + 1/3 + ... + 1/n
-
-14) Escreva uma fun√ß√£o que recebe n maior que zero e devolve o valor da soma:
+14) Escreva uma funÁ„o que recebe n maior que zero e devolve o valor da soma:
 1/1! + 1/2! + 1/3! + ... + 1/n!
 */
 
 
-//Exerc√≠cios: Fun√ß√µes
-//1) Fa√ßa uma fun√ß√£o que recebe o raio de uma esfera e calcula o seu volume (v = 4/3.P
+//ExercÌcios: FunÁıes
+//1) FaÁa uma funÁ„o que recebe o raio de uma esfera e calcula o seu volume (v = 4/3.P
 //.R3).
-//
 //#include <stdio.h>
 //#include <math.h>
 //
@@ -55,12 +43,10 @@ harm√¥nico, dado pelo valor da soma:
 
 
 
-//2) Escreva um procedimento que receba um n√∫mero inteiro e imprima o m√™s
-//correspondente ao n√∫mero. Por exemplo, 2 corresponde √† ‚Äúfevereiro‚Äù. O
-//procedimento deve mostrar uma mensagem de erro caso o n√∫mero recebido n√£o
-//fa√ßa sentido.
-//
-//
+//2) Escreva um procedimento que receba um n˙mero inteiro e imprima o mÍs
+//correspondente ao n˙mero. Por exemplo, 2 corresponde ‡ ìfevereiroî. O
+//procedimento deve mostrar uma mensagem de erro caso o n˙mero recebido n„o
+//faÁa sentido.
 //#include <stdio.h>
 //#include <math.h>
 //
@@ -86,9 +72,8 @@ harm√¥nico, dado pelo valor da soma:
 //	}
 //}
 
-//3) Fa√ßa uma fun√ß√£o que recebe um valor inteiro e positivo e retorna o valor l√≥gico
-//Verdadeiro caso o valor seja primo e Falso em caso contr√°rio.
-//
+//3) FaÁa uma funÁ„o que recebe um valor inteiro e positivo e retorna o valor lÛgico
+//Verdadeiro caso o valor seja primo e Falso em caso contr·rio.
 //#include <stdio.h>
 //#include <math.h>
 //
@@ -108,28 +93,98 @@ harm√¥nico, dado pelo valor da soma:
 //		
 //}
 
-//4) Escreva uma fun√ß√£o que receba dois n√∫meros inteiros x e y. Essa fun√ß√£o deve
-//verificar se x √© divis√≠vel por y. No caso positivo, a fun√ß√£o deve retornar 1, caso
-//contr√°rio zero.
-
-#include <stdio.h>
-#include <math.h>
-
-int divisao(int x, int y){
-	if (x%y == 0)
-	return 1;
-	else
-	return 0;
+//4) Escreva uma funÁ„o que receba dois n˙meros inteiros x e y. Essa funÁ„o deve
+//verificar se x È divisÌvel por y. No caso positivo, a funÁ„o deve retornar 1, caso
+//contr·rio zero.
+//#include <stdio.h>
+//#include <math.h>
+//
+//int divisao(int x, int y){
+//	if (x%y == 0)
+//	return 1;
+//	else
+//	return 0;
+//}
+//int main(){
+//	int x, y, div, resultado;
+//	printf("Insira o x: ");
+//	scanf("%d", &x);
+//	printf("Insira o y: ");
+//	scanf("%d", &y);
+//	resultado = divisao(x,y);
+//	if (resultado == 1)
+//	printf("Divisivel");
+//	else
+//	printf("Nao divisivel");
+//}
+//
+//5) Escreva uma funÁ„o que calcule e retorne a dist‚ncia entre dois pontos (x1, y1) e
+//(x2, y2).
+//int main(){
+//	float x1, x2, y1, y2, dx, dy, pit;
+//	printf("Insira o x1: ");
+//	scanf("%f", &x1);
+//	printf("Insira o y1: ");
+//	scanf("%f", &y1);
+//	printf("Insira o x2: ");
+//	scanf("%f", &x2);
+//	printf("Insira o y2: ");
+//	scanf("%f", &y2);
+//	dx = x2 - x1;
+//	dy = y2 - y1;
+//	printf("A distancia em vetor: %.2fi %.2fj", dx, dy);
+//	pit = pow((pow (dx, 2)+pow (dy, 2)),0.5);
+//	printf("\nA distancia em modulo: %.2f", pit);
+//}
+//
+//6) FaÁa uma funÁ„o que verifique se um valor È perfeito ou n„o. Um valor È dito
+//perfeito quando ele È igual a soma dos seus divisores excetuando ele prÛprio. (Ex: 6
+//È perfeito, 6 = 1 + 2 + 3, que s„o seus divisores). A funÁ„o deve retornar um valor
+//booleano.
+//
+//bool perfeito(int num){
+//	int aux, i;
+//	aux = 0;
+//	for (i=num/2;i!=0;i--){
+//		if (num%i == 0) aux = aux + i;
+//	}
+//	if (aux == num) return true;
+//	else
+//		return false;
+//}
+//
+//int main (){
+//	int num, aux, i, result;
+//	printf("Insira o numero: ");
+//	scanf("%d", &num);
+//	if (perfeito(num) == true) printf("True");
+//	else
+//		printf("False");
+//	result = (perfeito(num) == true) ? printf("True") : printf("False");
+//}
+//
+//7) Escreva uma funÁ„o media_final(p1, p2, ep1, ep2, ep3) que recebe as notas das
+//provas p1 e p2 e as notas dos exercÌcios-programa ep1, ep2 e ep3 de um aluno.
+//Devolve a mÈdia final deste aluno. A mÈdia final È dada por (2p+ep)/3, onde p =
+//(p1+2p2)/3 e ep = (ep1+2ep2+3ep3)/6.
+float mediafinal(float p1, float p2, float ep1, float ep2, float ep3){
+	float media_final, media_p, media_ep;
+	media_p = (p1+2*p2)/3;
+	media_ep = (ep1+2*ep2+3*ep3)/6;
+	media_final = (2*media_p+media_ep)/3;
+	return media_final;
 }
-int main(){
-	int x, y, div, resultado;
-	printf("Insira o x: ");
-	scanf("%d", &x);
-	printf("Insira o y: ");
-	scanf("%d", &y);
-	resultado = divisao(x,y);
-	if (resultado == 1)
-	printf("Divisivel");
-	else
-	printf("Nao divisivel");
+int main (){
+	float p1, p2, ep1, ep2, ep3;
+	printf("Insira a nota da p1: ");
+	scanf("%f", &p1);
+	printf("Insira a nota da p2: ");
+	scanf("%f", &p2);
+	printf("Insira a nota da ep1: ");
+	scanf("%f", &ep1);
+	printf("Insira a nota da ep2: ");
+	scanf("%f", &ep2);
+	printf("Insira a nota da ep3: ");
+	scanf("%f", &ep3);
+	printf("%f", mediafinal(10,10,10,10,10));
 }
