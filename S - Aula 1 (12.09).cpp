@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 /*
-8) Escreva uma função que compara duas datas que são dadas na forma dia, mês e
-ano. A função devolve 1 se a primeira data é maior que a segunda, 0 se são iguais e
--1 se a segunda é maior que a primeira.
 9) Escreva uma função que recebe, por parâmetro, dois valores X e Z e calcula e
 retorna X^Z (X elevado a Z).
 10) Criar uma função que verifique quantas vezes um número inteiro x é divisível por um
@@ -167,24 +164,31 @@ harmônico, dado pelo valor da soma:
 //provas p1 e p2 e as notas dos exercícios-programa ep1, ep2 e ep3 de um aluno.
 //Devolve a média final deste aluno. A média final é dada por (2p+ep)/3, onde p =
 //(p1+2p2)/3 e ep = (ep1+2ep2+3ep3)/6.
-float mediafinal(float p1, float p2, float ep1, float ep2, float ep3){
-	float media_final, media_p, media_ep;
-	media_p = (p1+2*p2)/3;
-	media_ep = (ep1+2*ep2+3*ep3)/6;
-	media_final = (2*media_p+media_ep)/3;
-	return media_final;
-}
-int main (){
-	float p1, p2, ep1, ep2, ep3;
-	printf("Insira a nota da p1: ");
-	scanf("%f", &p1);
-	printf("Insira a nota da p2: ");
-	scanf("%f", &p2);
-	printf("Insira a nota da ep1: ");
-	scanf("%f", &ep1);
-	printf("Insira a nota da ep2: ");
-	scanf("%f", &ep2);
-	printf("Insira a nota da ep3: ");
-	scanf("%f", &ep3);
-	printf("%f", mediafinal(10,10,10,10,10));
+//float mediafinal(float p1, float p2, float ep1, float ep2, float ep3){
+//	float media_final, media_p, media_ep;
+//	media_p = (p1+2*p2)/3;
+//	media_ep = (ep1+2*ep2+3*ep3)/6;
+//	media_final = (2*media_p+media_ep)/3;
+//	return media_final;
+//}
+//int main (){
+//	float p1, p2, ep1, ep2, ep3;
+//	printf("Insira a nota da p1: ");
+//	scanf("%f", &p1);
+//	printf("Insira a nota da p2: ");
+//	scanf("%f", &p2);
+//	printf("Insira a nota da ep1: ");
+//	scanf("%f", &ep1);
+//	printf("Insira a nota da ep2: ");
+//	scanf("%f", &ep2);
+//	printf("Insira a nota da ep3: ");
+//	scanf("%f", &ep3);
+//	printf("%f", mediafinal(10,10,10,10,10));
+//}
+//
+//8) Escreva uma função que compara duas datas que são dadas na forma dia, mês e
+//ano. A função devolve 1 se a primeira data é maior que a segunda, 0 se são iguais e
+//-1 se a segunda é maior que a primeira.
+int data(dia1,mes1,ano1,dia2,mes2,ano2){
+	if (ano1 > ano2) printfbt
 }
