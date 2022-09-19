@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 /*
-9) Escreva uma função que recebe, por parâmetro, dois valores X e Z e calcula e
-retorna X^Z (X elevado a Z).
 10) Criar uma função que verifique quantas vezes um número inteiro x é divisível por um
 número inteiro y. A função deve retornar -1 caso não seja possível calcular
 11) Escreva uma função que recebe n maior que zero, e retorna seu fatorial.
@@ -114,7 +112,7 @@ harmônico, dado pelo valor da soma:
 //	else
 //	printf("Nao divisivel");
 //}
-//
+
 //5) Escreva uma função que calcule e retorne a distância entre dois pontos (x1, y1) e
 //(x2, y2).
 //int main(){
@@ -133,7 +131,7 @@ harmônico, dado pelo valor da soma:
 //	pit = pow((pow (dx, 2)+pow (dy, 2)),0.5);
 //	printf("\nA distancia em modulo: %.2f", pit);
 //}
-//
+
 //6) Faça uma função que verifique se um valor é perfeito ou não. Um valor é dito
 //perfeito quando ele é igual a soma dos seus divisores excetuando ele próprio. (Ex: 6
 //é perfeito, 6 = 1 + 2 + 3, que são seus divisores). A função deve retornar um valor
@@ -159,7 +157,7 @@ harmônico, dado pelo valor da soma:
 //		printf("False");
 //	result = (perfeito(num) == true) ? printf("True") : printf("False");
 //}
-//
+
 //7) Escreva uma função media_final(p1, p2, ep1, ep2, ep3) que recebe as notas das
 //provas p1 e p2 e as notas dos exercícios-programa ep1, ep2 e ep3 de um aluno.
 //Devolve a média final deste aluno. A média final é dada por (2p+ep)/3, onde p =
@@ -185,10 +183,48 @@ harmônico, dado pelo valor da soma:
 //	scanf("%f", &ep3);
 //	printf("%f", mediafinal(10,10,10,10,10));
 //}
+
+////8) Escreva uma função que compara duas datas que são dadas na forma dia, mês e
+////ano. A função devolve 1 se a primeira data é maior que a segunda, 0 se são iguais e
+////-1 se a segunda é maior que a primeira.
+//int data(int dia1,int mes1,int ano1,int dia2,int mes2,int ano2){
+//	int aux1, aux2;
+//	aux1 = dia1+mes1*30+ano1*365;
+//	aux2 = dia2+mes2*30+ano2*365;
+//	if (aux1 > aux2)
+//	return 1;
+//	else if (aux2 > aux1)
+//	return -1;
+//	else
+//	return 0;
+//}
 //
-//8) Escreva uma função que compara duas datas que são dadas na forma dia, mês e
-//ano. A função devolve 1 se a primeira data é maior que a segunda, 0 se são iguais e
-//-1 se a segunda é maior que a primeira.
-int data(dia1,mes1,ano1,dia2,mes2,ano2){
-	if (ano1 > ano2) printfbt
+//int main(){
+//	int dia1,mes1,ano1,dia2,mes2,ano2;
+//	printf("Insira o dia 1: ");
+//	scanf("%d", &dia1);
+//	printf("Insira o mes 1: ");
+//	scanf("%d", &mes1);
+//	printf("Insira o ano 1: ");
+//	scanf("%d", &ano1);
+//	printf("Insira o dia 2: ");
+//	scanf("%d", &dia2);
+//	printf("Insira o mes 2: ");
+//	scanf("%d", &mes2);
+//	printf("Insira o ano 2: ");
+//	scanf("%d", &ano2);
+//	printf("%i", data(dia1,mes1,ano1,dia2,mes2,ano2));
+//}
+
+//9) Escreva uma função que recebe, por parâmetro, dois valores X e Z e calcula e
+//retorna X^Z (X elevado a Z).
+float elevado(float x,float z){
+	return pow(x,z);
+}
+int main(){
+	float x,z;
+	printf("Insira o x: ");
+	scanf("%f", &x);
+	printf("Insira o z: ");
+	scanf("%f", &z);
 }
