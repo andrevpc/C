@@ -1,25 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-/*
-10) Criar uma função que verifique quantas vezes um número inteiro x é divisível por um
-número inteiro y. A função deve retornar -1 caso não seja possível calcular
-11) Escreva uma função que recebe n maior que zero, e retorna seu fatorial.
-12) Criar uma função que calcule e retorne o número de arranjos e outra que faça o
-mesmo para combinações. As entradas serão:
-n = Quantidade total de elementos no conjunto
-p = Quantidade de elementos por arranjo/combinação
-Siga as seguintes fórmulas:
-Arranjos:
-A = n!/(n-p)!
-Combinações:
-C = n!/p!(n-p)!
-13) Escreva uma função que recebe n maior que zero e devolve o n-ésimo número
-harmônico, dado pelo valor da soma:
-1 + 1/2 + 1/3 + ... + 1/n
-14) Escreva uma função que recebe n maior que zero e devolve o valor da soma:
-1/1! + 1/2! + 1/3! + ... + 1/n!
-*/
-
 
 //Exercícios: Funções
 //1) Faça uma função que recebe o raio de uma esfera e calcula o seu volume (v = 4/3.P
@@ -216,15 +196,186 @@ harmônico, dado pelo valor da soma:
 //	printf("%i", data(dia1,mes1,ano1,dia2,mes2,ano2));
 //}
 
-//9) Escreva uma função que recebe, por parâmetro, dois valores X e Z e calcula e
-//retorna X^Z (X elevado a Z).
-float elevado(float x,float z){
-	return pow(x,z);
-}
-int main(){
-	float x,z;
-	printf("Insira o x: ");
-	scanf("%f", &x);
-	printf("Insira o z: ");
-	scanf("%f", &z);
-}
+////9) Escreva uma função que recebe, por parâmetro, dois valores X e Z e calcula e
+////retorna X^Z (X elevado a Z).
+//float elevado(float x,float z){
+//	return pow(x,z);
+//}
+//int main(){
+//	float x,z;
+//	printf("Insira o x: ");
+//	scanf("%f", &x);
+//	printf("Insira o z: ");
+//	scanf("%f", &z);
+//	printf("%.2f", elevado(x,z));
+//}
+
+////10) Criar uma função que verifique quantas vezes um número inteiro x é divisível por um
+////número inteiro y. A função deve retornar -1 caso não seja possível calcular
+//int divisivel(int x, int y){
+//	int aux;
+//	aux = 0;
+//	while(x%y==0){
+//		x = x/y;
+//		aux += 1;
+//}
+//if (aux ==0){
+//	return -1;
+//}
+//else{
+//	return aux;
+//}
+//}
+//
+//int main(){
+//	int x,y,aux;
+//	printf("Insira x: ");
+//	scanf("%i", &x);
+//	printf("\nInsira y: ");
+//	scanf("%i", &y);
+//	printf("%i",divisivel(x,y));
+//}
+
+////11) Escreva uma função que recebe n maior que zero, e retorna seu fatorial.
+//#include <stdio.h>
+//#include <math.h>
+//
+//int fatorial(int n){
+//	int i;
+//	
+//if (n < 0){
+//printf("não existe fatorial para numeros menores que 0");
+//}
+//else{
+//	if (n == 1 || n == 0){
+//		printf("Fatorial: 1");
+//	}
+//	else{
+//		for (i =1; n>1; n--){
+//			i = i*n;
+//		}
+//	}
+//		printf("\nSeu fatorial é: %d",i);
+//	
+//}
+//}
+//int main(){
+//	
+//	int n;
+//	
+//	printf("insira n: ");
+//	scanf("%d",&n);
+//	fatorial(n);
+//}
+
+////12) Criar uma função que calcule e retorne o número de arranjos e outra que faça o
+////mesmo para combinações. As entradas serão:
+////n = Quantidade total de elementos no conjunto
+////p = Quantidade de elementos por arranjo/combinação
+////Siga as seguintes fórmulas:
+////Arranjos:
+////A = n!/(n-p)!
+////Combinações:
+////C = n!/p!(n-p)!
+//
+//int fatorial(int x){
+//	int i;
+//	
+//if (x < 0){
+//printf("não existe fatorial para numeros menores que 0");
+//}
+//else{
+//	if (x == 1 || x == 0){
+//		return 1;
+//	}
+//	else{
+//		for (i =1; x>1; x--){
+//			i = i*x;
+//		}
+//	}
+//		return i;
+//}
+//}
+//float arranjos(float n, float p){
+//	float a;
+//	a = fatorial(n)/fatorial(n-p);
+//	return a;
+//}
+//
+//float combinacao(float n, float p){
+//	float c;
+//	c = (fatorial(n)/fatorial(p))/fatorial(n-p);
+//	return c;
+//}
+//
+//int main(){
+//	
+//	float n,p;
+//	
+//	printf("Insira a quantidade total de elementos no conjunto: ");
+//	scanf("%f",&n);
+//	printf("\nInsira a quantidade de elementos por arranjo/combinacao: ");
+//	scanf("%f",&p);
+//	
+//	printf("%.1f",arranjos(n,p));
+//	printf("\n%.1f",combinacao(n,p));
+//}
+
+////13) Escreva uma função que recebe n maior que zero e devolve o n-ésimo número
+////harmônico, dado pelo valor da soma:
+////1 + 1/2 + 1/3 + ... + 1/n
+//float harmonico(float n){
+//	float resultado;
+//	int x;
+//	resultado = 0;
+//	for (x=1; x<=n; x++){
+//		resultado = resultado + 1.0/x;
+//	}
+//	return resultado;
+//}
+//
+//int main(){
+//	float n;
+//	printf("Insira o n: ");
+//	scanf("%f",&n);
+//	printf("%.2f", harmonico(n));
+//}
+
+////14) Escreva uma função que recebe n maior que zero e devolve o valor da soma:
+////1/1! + 1/2! + 1/3! + ... + 1/n!
+//
+//int fatorial(int x){
+//	int i;
+//	
+//if (x < 0){
+//printf("não existe fatorial para numeros menores que 0");
+//}
+//else{
+//	if (x == 1 || x == 0){
+//		return 1;
+//	}
+//	else{
+//		for (i =1; x>1; x--){
+//			i = i*x;
+//		}
+//	}
+//		return i;
+//}
+//}
+//
+//float harmonico(float n){
+//	float resultado;
+//	int x;
+//	resultado = 0;
+//	for (x=1; x<=n; x++){
+//		resultado = resultado + 1.0/fatorial(x);
+//	}
+//	return resultado;
+//}
+//
+//int main(){
+//	float n;
+//	printf("Insira o n: ");
+//	scanf("%f",&n);
+//	printf("%.2f", harmonico(n));
+//}
