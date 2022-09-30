@@ -4,75 +4,75 @@
 #include <locale.h>
 #include <math.h>
 
-////Exercício 1 - for
+////ExercÃ­cio 1 - for
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I;
 //	for(I=1;I<=10;I++)
-//		printf("Número: %d.\n", I);
+//		printf("NÃºmero: %d.\n", I);
 //	system("pause");
 //	return(0);
 //}
 
-////Exercício 1 - while
+////ExercÃ­cio 1 - while
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I;
 //	I=1;
 //	while (I<=10){
-//		printf("Número: %d.\n", I);
+//		printf("NÃºmero: %d.\n", I);
 //		I++;
 //}
 //	system("pause");
 //	return(0);
 //}
 
-////Exercício 1 - do while
+////ExercÃ­cio 1 - do while
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I;
 //	I = 1;
 //	do{
-//		printf("Número: %i.\n", I);
+//		printf("NÃºmero: %i.\n", I);
 //		I = I + 1;
 //	}while(I<=10);
 //	system("pause");
 //	return(0);
 //}
 
-////Exercício 2
+////ExercÃ­cio 2
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I;
 //	for(I=10;I>=0;I--)
-//		printf("Número: %d.\n", I);
+//		printf("NÃºmero: %d.\n", I);
 //	system("pause");
 //	return(0);
 //}
 
-////Exercício 3
+////ExercÃ­cio 3
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I;
 //	for(I=100;I<=110;I++)
-//		printf("Número: %d.\n", I);
+//		printf("NÃºmero: %d.\n", I);
 //	system("pause");
 //	return(0);
 //}
 
-////Exercício 4
+////ExercÃ­cio 4
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I, N;
 //	printf("Escolha o N: ");
 //	scanf("%d", &N);
 //	for(I=1;I<=N;I++)
-//		printf("Número: %d.\n", I);
+//		printf("NÃºmero: %d.\n", I);
 //	system("pause");
 //	return(0);
 //}
 
-////Exercício 5
+////ExercÃ­cio 5
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I, N, aux;
@@ -82,7 +82,7 @@
 //		scanf("%d", &N);
 //		if (N > 0){
 //			for(I=1;I<=N;I++)
-//			printf("Número: %d.\n", I);
+//			printf("NÃºmero: %d.\n", I);
 //		aux = 0;
 //		}
 //		}
@@ -91,7 +91,7 @@
 //	return(0);
 //}
 
-////Exercício 6
+////ExercÃ­cio 6
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I;
@@ -101,7 +101,7 @@
 //	return(0);
 //}
 
-////Exercício 7
+////ExercÃ­cio 7
 //int main(){
 //	setlocale(LC_ALL,"Portuguese");
 //	int I, N;
